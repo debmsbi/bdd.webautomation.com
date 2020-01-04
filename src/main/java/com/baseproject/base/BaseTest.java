@@ -45,7 +45,7 @@ import com.baseproject.webdriver.WebDriverFactory;
 * class @BeforeSuite, @BeforeClass, @AfterSuite, TestNG Asserts(Hard, Soft),
 * set/get login credentials
 * 
- * @author U1196286
+ * @author 10647421
 *
 */
 public class BaseTest extends WebDriverFactory {

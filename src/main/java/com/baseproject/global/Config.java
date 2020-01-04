@@ -1,8 +1,8 @@
 
 /**
-* This com.mmc.global package has a 'Config' class for global variables and configuration functions  
+* This com.baseproject.global package has a 'Config' class for global variables and configuration functions  
  * @since 1.0
-* @author U1196286
+* @author 10647421
 */
 package com.baseproject.global;
 
@@ -50,7 +50,7 @@ import com.codoid.products.fillo.Recordset;
 import com.baseproject.utility.Log;
 
 /**
-* @author U1196286 The Config class contains <br>
+* @author 10647421 The Config class contains <br>
 *         Global variables <br>
 *         Config functions </br>
 */
