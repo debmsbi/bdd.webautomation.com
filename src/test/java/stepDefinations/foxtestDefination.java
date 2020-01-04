@@ -16,7 +16,7 @@ public class foxtestDefination extends BaseTest {
 	public foxBasePage foxBasePage;
 	
 	
-	
+
 	@Given("^Initialize the browser with chrome$")
     public void initialize_the_browser_with_chrome() throws Exception  {
      
