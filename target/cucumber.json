@@ -1,0 +1,68 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Time Entry And Lunch default login",
+        "description": "",
+        "id": "application-login;time-entry-and-lunch-default-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19388064700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Initialize the browser with chrome",
+            "match": {
+              "location": "foxtestDefination.initialize_the_browser_with_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9952531300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Enter PTORequestDates \"12/25/2019 - 12/25/2019\" and ptorequesttype \"Sick\" and login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12/25/2019 - 12/25/2019",
+                  "offset": 28
+                },
+                {
+                  "val": "Sick",
+                  "offset": 73
+                }
+              ],
+              "location": "foxtestDefination.user_enter_ptorequestdates_something_and_ptorequesttype_something_and_login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5657863700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify Timesheet is displayed",
+            "match": {
+              "location": "foxtestDefination.verify_timesheet_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Application Login",
+    "description": "",
+    "id": "application-login",
+    "keyword": "Feature",
+    "uri": "foxtest.feature"
+  }
+]
