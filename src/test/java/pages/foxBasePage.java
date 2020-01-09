@@ -1,28 +1,10 @@
 package pages;
 
-import java.lang.reflect.Method;
-import java.net.InetAddress;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
-
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.testng.ITestContext;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.baseproject.base.BaseTest;
 import com.baseproject.utility.BasePage;
 import com.baseproject.utility.Log;
-
 public class foxBasePage extends BasePage {
       
 
@@ -35,40 +17,68 @@ public class foxBasePage extends BasePage {
 	
 	
      /**
-     * This function is to initialize Property file, initialize Excel, initialize
+     * This function is to initialize Property file, initialize
      * Webdriver
      *
      */
     
      public synchronized void setup() throws Exception {
-           {
-                 try {
-                       
-                       initProperties();
-                       intiDriver();
+    	
+    	 try {
+             DateTimeFormatter ft = DateTimeFormatter.ofPattern("MM.dd.yyyy.hh.mm.ss");
+             if (runTime == null) {
+                   runTime = LocalDateTime.now().format(ft);
+             }
 
-                       Log.info("-----------Test Class [" + this.getClass().getSimpleName() + "] Execution started-----------");                      
-                 } catch (WebDriverException e) {
-                       Log.error("WebDriver exception occurred at init() ", e);
-                 } catch (Exception e) {
-                       Log.error("Exception occurred at init()  ", e);
-                 }
-           }
-     }
+             createFolder("logs");
+             createFolder("screenshots");
+           
+       } catch (WebDriverException e) {
+             Log.error("WebDriver exception occurred at preinit() ", e);
+       } catch (Exception e) {
+             Log.error("Exception occurred at preinit()  ", e);
+       }
+    	 
+             initProperties();
+             intiDriver();
+             try {       
+             Log.info("-----------Test Class [" + this.getClass().getSimpleName()
+                     + "] Execution Started-------------");
+   } catch (WebDriverException e) {
+         Log.error("WebDriver exception occurred at init() ", e);
+   } catch (Exception e) {
+         Log.error("Exception occurred at init()  ", e);
+   }
+             
+ }
+   
+
+
+       
+     
 
   
      public synchronized void tearDown() {
-         try {
-               Log.info("-----------Test Class [" + this.getClass().getSimpleName() + "] Execution Completed-----------");
-            
-                     getWebDriver().close();
-                     getWebDriver().quit();
-               
-         } catch (Exception e) {
-               Log.error("Exception occurred @TearDown: " + e.getMessage());
-         }
-   }
+			  
+    	 try {
+             Log.info("-----------Test Class [" + this.getClass().getSimpleName() + "] Execution Completed-----------");
+             // getExtentReportThreadSafe().removeTest(getExtentTestThreadSafe());
+             getExtentReportThreadSafe().flush();
+             closeExcelConnection();
+             if (getWebDriver() != null) {
+                   getWebDriver().close();
+                   getWebDriver().quit();
+             }
+       } catch (Exception e) {
+             Log.error("Exception occurred @TearDown: " + e.getMessage());
+       }
+ }
+}
+     
+
+         
+         
     
       
 	      
-}
+

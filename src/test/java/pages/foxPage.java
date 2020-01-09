@@ -1,7 +1,5 @@
 package pages;
 
-import java.util.List;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,6 +16,7 @@ public class foxPage extends BasePage {
       @FindBy(xpath = "//*[@id='s2id_dropPTOType']/a/span[2]/b")  WebElement click_dropdown_ptorequesttype;
       @FindBy(id = "s2id_autogen4_search") WebElement entertext_ptorequesttype;
       @FindBy(xpath = "//*[@id='select2-results-4']/li/div/span")  WebElement click_dropdown_ptorequesttype_sick;
+     // @FindBy(xpath = "//*[@id='select8-results-4']/li/div/span")  WebElement click_dropdown_ptorequesttype_sick;
       @FindBy(id = "btnSubmit") WebElement click_submit_button;
     
       

@@ -9,10 +9,54 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Application Login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">35,672</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Application Login</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">183,370</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Application Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testRunner.TestRun</td><td><a href="#m0">feature</a></td><td rowspan="1">1578165312039</td><td rowspan="1">34619</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Application Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testRunner.TestRun</td><td><a href="#m0">feature</a></td><td rowspan="1">1578595762058</td><td rowspan="1">136104</td></tr></tbody>
 </table>
-<h2>Application Login</h2><h3 id="m0">testRunner.TestRun#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Application Login</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">-----------Test Class [foxBasePage] Execution started-----------<br /><br/>Open the URL [https://test.blueforce.com/FoxQA/Login.aspx?ReturnUrl=%2fFoxQA%2fLogin]<br /><br/>Enter text [FOXQALOTS] in the [Company] Text Box<br /><br/>Enter text [ajoshi] in the [User Name] Text Box<br /><br/>Enter text [abc12345] in the [Password] Text Box<br /><br/>Click on [Submit]<br /><br/>Click on [click_Mypto_link]<br /><br/>Click on [click_PTORequest_Tab]<br /><br/>Enter text [12/25/2019 - 12/25/2019] in the [entertext_PTORequest_Dates] Text Box<br /><br/>Click on [click_Apply_button]<br /><br/>Click on [click_dropdown_ptorequesttype]<br /><br/>Enter text [Sick] in the [entertext_ptorequesttype] Text Box<br /><br/>Click on [click_dropdown_ptorequesttype_sick]<br /><br/>Click on [click_submit_button]<br /><br/>-----------Test Class [foxBasePage] Execution Completed-----------<br /></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Application Login</h2><h3 id="m0">testRunner.TestRun#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Application Login</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">-----------Test Class [foxBasePage] Execution Started-------------<br /><br/>Open the URL [https://test.blueforce.com/FoxQA/Login.aspx?ReturnUrl=%2fFoxQA%2fLogin]<br /><br/>Enter text [FOXQALOTS] in the [Company] Text Box<br /><br/>Enter text [ajoshi] in the [User Name] Text Box<br /><br/>Enter text [abc12345] in the [Password] Text Box<br /><br/>Click on [Submit]<br /><br/>Click on [click_Mypto_link]<br /><br/>Click on [click_PTORequest_Tab]<br /><br/>Enter text [12/25/2019 - 12/25/2019] in the [entertext_PTORequest_Dates] Text Box<br /><br/>Click on [click_Apply_button]<br /><br/>Click on [click_dropdown_ptorequesttype]<br /><br/>Enter text [Sick] in the [entertext_ptorequesttype] Text Box<br /><br/>Click on [click_dropdown_ptorequesttype_sick]<br /><br/>Unable to click on [click_dropdown_ptorequesttype_sick]<br /></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;select8-results-4&apos;]/li/div/span&quot;}
+  (Session info: chrome=79.0.3945.88)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1ILH4UB&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: cf34fa9190123fde98f551d1899ab966
+*** Element info: {Using=xpath, value=//*[@id=&apos;select8-results-4&apos;]/li/div/span}
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;select8-results-4&apos;]/li/div/span&quot;}
+  (Session info: chrome=79.0.3945.88)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1ILH4UB&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
+Session ID: cf34fa9190123fde98f551d1899ab966
+*** Element info: {Using=xpath, value=//*[@id=&apos;select8-results-4&apos;]/li/div/span}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.baseproject.utility.BasePage.clickOnElement(BasePage.java:322)
+	at pages.foxPage.click_dropdown_ptorequesttype_sick(foxPage.java:77)
+	at stepDefinations.foxtestDefination.verify_timesheet_is_displayed(foxtestDefination.java:72)
+	at ✽.Then Verify Timesheet is displayed(foxtest.feature:6)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

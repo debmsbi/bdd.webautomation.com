@@ -1,5 +1,6 @@
 package stepDefinations;
 
+import java.io.IOException;
 import com.baseproject.base.BaseTest;
 import cucumber.api.java.en.*;
 import pages.foxLoginPage;
@@ -59,14 +60,15 @@ public class foxtestDefination extends BaseTest {
 	    }
 
 	 @Then("^Verify Timesheet is displayed$")
-	    public void verify_timesheet_is_displayed() {
+	    public void verify_timesheet_is_displayed() throws IOException {
 	        
 	   foxPage.click_dropdown_ptorequesttype_sick();
 	   foxPage.click_submit_button();
 	   foxBasePage.tearDown();
 	     
 	    }
-	
+	 
+	 
 
 
 	
