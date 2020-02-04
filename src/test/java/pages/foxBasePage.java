@@ -63,8 +63,6 @@ public class foxBasePage extends BasePage {
     	 try {
              Log.info("-----------Test Class [" + this.getClass().getSimpleName() + "] Execution Completed-----------");
              // getExtentReportThreadSafe().removeTest(getExtentTestThreadSafe());
-             getExtentReportThreadSafe().flush();
-             closeExcelConnection();
              if (getWebDriver() != null) {
                    getWebDriver().close();
                    getWebDriver().quit();

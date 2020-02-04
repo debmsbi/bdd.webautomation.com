@@ -1,3 +1,4 @@
+@homepage
 Feature: Application Login
 
 Scenario: Time Entry And Lunch default login

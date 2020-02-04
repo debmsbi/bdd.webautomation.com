@@ -9,8 +9,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions( 
-	    features = "src//test//java//features",
-        glue = {"stepDefinations"},
+		dryRun = false,
+		tags = { "@homepage" },
+	    features = "src/test/java/features",
+        glue = {"stepDefinations","runner","l"},
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
         monochrome = true
         )
